@@ -1,18 +1,11 @@
 <template>
-  <section id="consultorio" class="py-24 bg-slate-50">
+  <section id="sobre-mi" class="py-24 bg-slate-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-        <!-- Placeholder Consultorio -->
+        <!-- Fotografía Consultorio -->
         <div v-reveal class="mb-12 lg:mb-0 relative">
-          <div class="aspect-video w-full rounded-2xl bg-white shadow-sm flex items-center justify-center overflow-hidden relative border border-slate-200">
-            <!-- FOTO CONSULTORIO PLACEHOLDER -->
-            <div class="absolute inset-0 bg-slate-100 animate-pulse"></div>
-            <div class="relative z-10 flex flex-col items-center justify-center text-slate-400">
-              <svg class="w-12 h-12 mb-3 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-              </svg>
-              <span class="text-sm font-medium tracking-wide">Fotografía del Consultorio</span>
-            </div>
+          <div class="aspect-video w-full rounded-2xl shadow-sm overflow-hidden border border-slate-200">
+            <img src="/images/consultorio.png" alt="Consultorio del Dr. Gabriel Pellegrini" class="w-full h-full object-cover object-center" />
           </div>
         </div>
 

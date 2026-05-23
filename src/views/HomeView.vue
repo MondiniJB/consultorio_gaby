@@ -2,6 +2,7 @@
 import Header from '../components/layout/Header.vue'
 import HeroSection from '../components/sections/HeroSection.vue'
 import ServicesList from '../components/sections/ServicesList.vue'
+import ConsultorioInfo from '../components/sections/ConsultorioInfo.vue'
 import AboutDoctor from '../components/sections/AboutDoctor.vue'
 import CtaWhatsapp from '../components/sections/CtaWhatsapp.vue'
 import Footer from '../components/layout/Footer.vue'
@@ -13,6 +14,7 @@ import Footer from '../components/layout/Footer.vue'
     <main class="flex-grow">
       <HeroSection />
       <ServicesList />
+      <ConsultorioInfo />
       <AboutDoctor />
       <CtaWhatsapp />
     </main>

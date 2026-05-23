@@ -4,7 +4,7 @@
       <div class="flex justify-between items-center h-20">
         <!-- Logo / Nombre -->
         <div class="flex-shrink-0 flex items-center cursor-pointer">
-          <span class="text-xl font-semibold tracking-tight text-slate-900">Dr. Gabriel Pellegrini</span>
+          <a href="#inicio" class="text-xl font-semibold tracking-tight text-slate-900 hover:text-primary-600 transition-colors">Dr. Gabriel Pellegrini</a>
         </div>
         
         <!-- Navegación de Escritorio -->
@@ -12,6 +12,7 @@
           <a href="#inicio" class="text-slate-600 hover:text-primary-600 font-medium transition-colors">Inicio</a>
           <a href="#especialidades" class="text-slate-600 hover:text-primary-600 font-medium transition-colors">Especialidades</a>
           <a href="#consultorio" class="text-slate-600 hover:text-primary-600 font-medium transition-colors">Consultorio</a>
+          <a href="#sobre-mi" class="text-slate-600 hover:text-primary-600 font-medium transition-colors">Sobre Mí</a>
         </nav>
 
         <!-- Call to Action -->

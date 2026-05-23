@@ -1,3 +1,7 @@
+<script setup>
+import { externalLinks } from '../../config/links.js'
+</script>
+
 <template>
   <footer class="bg-slate-900 pt-16 pb-8">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -37,6 +41,7 @@
             <li><a href="#inicio" class="text-slate-400 hover:text-white text-sm transition-colors">Inicio</a></li>
             <li><a href="#especialidades" class="text-slate-400 hover:text-white text-sm transition-colors">Especialidades</a></li>
             <li><a href="#consultorio" class="text-slate-400 hover:text-white text-sm transition-colors">Consultorio</a></li>
+            <li><a href="#sobre-mi" class="text-slate-400 hover:text-white text-sm transition-colors">Sobre Mí</a></li>
           </ul>
         </div>
       </div>
@@ -47,7 +52,7 @@
           &copy; {{ new Date().getFullYear() }} Dr. Gabriel Pellegrini. Todos los derechos reservados.
         </p>
         <p class="text-slate-500 text-sm">
-          Diseñado por <a href="#" class="text-primary-500 hover:text-primary-400 transition-colors font-medium">Qvanta Studio</a>
+          Diseñado por <a :href="externalLinks.qvantaStudio" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-400 transition-colors font-medium">Qvanta Studio</a>
         </p>
       </div>
     </div>
