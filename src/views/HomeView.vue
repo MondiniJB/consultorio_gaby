@@ -11,7 +11,7 @@ import Footer from '../components/layout/Footer.vue'
 <template>
   <div class="min-h-screen flex flex-col bg-slate-50">
     <Header />
-    <main class="flex-grow">
+    <main class="flex-grow pt-20">
       <HeroSection />
       <ServicesList />
       <ConsultorioInfo />

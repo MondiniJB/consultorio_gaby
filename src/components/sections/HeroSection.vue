@@ -3,7 +3,7 @@ import { externalLinks } from '../../config/links.js'
 </script>
 
 <template>
-  <section id="inicio" class="relative min-h-[100dvh] flex items-center pt-20 pb-28 sm:pt-32 sm:pb-36 overflow-hidden z-0">
+  <section id="inicio" class="relative min-h-[calc(100dvh-5rem)] flex items-center pt-10 pb-16 sm:pt-16 sm:pb-20 overflow-hidden z-0">
     <!-- Video Background -->
     <div class="absolute inset-0 w-full h-full -z-20">
       <video 
