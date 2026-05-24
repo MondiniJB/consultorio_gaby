@@ -22,11 +22,11 @@
           </div>
           
           <div class="grid grid-cols-2 gap-4 mt-8">
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow cursor-pointer">
               <div class="text-3xl font-bold text-primary-600 mb-1">+15</div>
               <div class="text-sm text-slate-500 font-medium">Años de trayectoria</div>
             </div>
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow cursor-pointer">
               <div class="text-3xl font-bold text-primary-600 mb-1">Cálido</div>
               <div class="text-sm text-slate-500 font-medium">Trato humano y cercano</div>
             </div>
