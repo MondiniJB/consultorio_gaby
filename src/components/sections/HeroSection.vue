@@ -3,7 +3,7 @@ import { externalLinks } from '../../config/links.js'
 </script>
 
 <template>
-  <section id="inicio" class="relative pt-20 pb-28 sm:pt-32 sm:pb-36 overflow-hidden z-0">
+  <section id="inicio" class="relative min-h-[100dvh] flex items-center pt-20 pb-28 sm:pt-32 sm:pb-36 overflow-hidden z-0">
     <!-- Video Background -->
     <div class="absolute inset-0 w-full h-full -z-20">
       <video 
@@ -19,7 +19,7 @@ import { externalLinks } from '../../config/links.js'
     <!-- Overlay para mantener la legibilidad del texto -->
     <div class="absolute inset-0 bg-white/70 backdrop-blur-[2px] -z-10"></div>
 
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
       <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
         <!-- Contenido de Texto -->
         <div v-reveal class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
