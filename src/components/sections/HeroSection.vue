@@ -1,5 +1,50 @@
 <script setup>
 import { externalLinks } from '../../config/links.js'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+
+const videoRef = ref(null)
+
+onMounted(() => {
+  let played = false
+
+  const tryPlayVideo = () => {
+    if (played) return
+    if (videoRef.value && videoRef.value.paused) {
+      const playPromise = videoRef.value.play()
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          played = true
+          removeListeners()
+        }).catch(error => {
+          console.log('Esperando interacción del usuario para reproducir:', error)
+        })
+      }
+    }
+  }
+
+  const handleInteraction = () => {
+    tryPlayVideo()
+  }
+
+  const addListeners = () => {
+    document.addEventListener('touchend', handleInteraction, { passive: true })
+    document.addEventListener('click', handleInteraction, { passive: true })
+    document.addEventListener('scroll', handleInteraction, { passive: true })
+  }
+
+  const removeListeners = () => {
+    document.removeEventListener('touchend', handleInteraction)
+    document.removeEventListener('click', handleInteraction)
+    document.removeEventListener('scroll', handleInteraction)
+  }
+
+  addListeners()
+  tryPlayVideo()
+
+  onBeforeUnmount(() => {
+    removeListeners()
+  })
+})
 </script>
 
 <template>
@@ -7,6 +52,7 @@ import { externalLinks } from '../../config/links.js'
     <!-- Video Background -->
     <div class="absolute inset-0 w-full h-full -z-20">
       <video 
+        ref="videoRef"
         autoplay 
         loop 
         muted 
