@@ -1,30 +1,5 @@
 <script setup>
 import { externalLinks } from '../../config/links.js'
-import { ref, onMounted, onBeforeUnmount } from 'vue'
-
-const videoRef = ref(null)
-
-onMounted(() => {
-  const tryPlayVideo = () => {
-    if (videoRef.value && videoRef.value.paused) {
-      videoRef.value.play().catch(error => {
-        console.log('Autoplay prevented by browser:', error)
-      })
-    }
-  }
-
-  const handleInteraction = () => {
-    tryPlayVideo()
-  }
-
-  document.addEventListener('touchstart', handleInteraction, { passive: true })
-  document.addEventListener('click', handleInteraction, { passive: true })
-
-  onBeforeUnmount(() => {
-    document.removeEventListener('touchstart', handleInteraction)
-    document.removeEventListener('click', handleInteraction)
-  })
-})
 </script>
 
 <template>
@@ -32,7 +7,6 @@ onMounted(() => {
     <!-- Video Background -->
     <div class="absolute inset-0 w-full h-full -z-20">
       <video 
-        ref="videoRef"
         autoplay 
         loop 
         muted 
